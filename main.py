@@ -3,8 +3,6 @@ import pandas as pd
 from datetime import datetime
 from pathlib import Path
 
-PATH = '.\\raw_data\\2024_raw.txt'
-
 MONTHS = {
     "ian.": 1,
     "feb.": 2,
@@ -79,7 +77,12 @@ def save_to_parquet(df: pd.DataFrame, in_file_path: str):
 rows = []
 buffer_row = []
 
-with open(PATH, "r", encoding="utf-8") as file:
+print('Insert path to raw data below, as in the examples and double the \\ characters.')
+print('Relative: .\\raw_data\\year_raw.txt ')
+print('Absolute: .C:\\Users\\your_user\\OneDrive\\Documents\\GitHub\\air-quality-dashboard\\raw_data\\year_raw.txt')
+path = input('Path:')
+
+with open(path, "r", encoding="utf-8") as file:
     for line in file:
         line = line.strip()
 
@@ -90,7 +93,7 @@ with open(PATH, "r", encoding="utf-8") as file:
 
         if len(buffer_row) == 5:
 
-            row = {'timestamp': parse_timestamp(buffer_row[0], PATH),
+            row = {'timestamp': parse_timestamp(buffer_row[0], path),
                   'pm10_ug_m3': parse_pm(buffer_row[1]),
                   'pm25_ug_m3': parse_pm(buffer_row[2]),
                   'temp_c': parse_temp(buffer_row[3]),
@@ -106,7 +109,7 @@ with open(PATH, "r", encoding="utf-8") as file:
     rows = sorted(rows, key = lambda d: d['timestamp'], reverse = True)
     rows = pd.DataFrame(rows)
 
-    parquet_file = save_to_parquet(rows, PATH)
+    parquet_file = save_to_parquet(rows, path)
     if parquet_file is None:
         print("Skipped writing parquet (user chose not to overwrite).")
         raise SystemExit
