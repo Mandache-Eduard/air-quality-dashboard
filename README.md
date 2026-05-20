@@ -80,6 +80,31 @@ It is built as a portfolio project to demonstrate practical work with real envir
 * 152-C.Aradului/G.T.Popa
 * 116-Str. Closca
 
+### How complete is the selected data?
+
+After converting the raw data to Parquet format, I checked it missing values.
+
+Across the 11 selected Parquet files, the dataset contains:
+
+* 96,349 timestamped records;
+* 385,396 expected sensor measurements;
+* 14,213 missing sensor measurements;
+* an overall missing data rate of 3.69% at measurement-level;
+* 6,609 records with at least one missing sensor measurement, representing 6.86% missing data rate at row-level.;
+
+The missing values are not evenly distributed across the measured attributes:
+
+| Attribute | Missing values | Missing percentage |
+|---|---:|---:|
+| PM10 | 1,765 | 1.83% |
+| PM2.5 | 1,766 | 1.83% |
+| Temperature | 4,074 | 4.23% |
+| Humidity | 6,608 | 6.86% |
+
+I chose to measure data completeness at the individual sensor measurement level rather than at the full-row level. This is because many records are only partially incomplete. For example, a row may be missing humidity while still containing valid PM10, PM2.5, temperature, and timestamp values.
+
+The full data integrity report is available here: [DATA_INTEGRITY.md](DATA_INTEGRITY.md).
+
 ___
 
 <!-- DEMO EXAMPLES -->

@@ -18,6 +18,15 @@ MONTHS = {
     "dec.": 12,
 }
 
+DATA_COLUMNS = [
+    "pm10_ug_m3",
+    "pm25_ug_m3",
+    "temp_c",
+    "humidity",
+]
+
+TIMESTAMP_COLUMN = "timestamp"
+
 def parse_timestamp(ts: str, file_path: str) -> datetime:
     stem = Path(file_path).stem          # "2026_raw"
     year_str = stem.split("_", 1)[0]     # "2026"
