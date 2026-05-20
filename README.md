@@ -23,14 +23,62 @@ ___
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project combines a script written in [![Python][Python-shield]][Python-url] with a Power BI dashboard to explore local air quality data from the past two years. The script takes raw `.txt` files containing measurements and converts them into `.parquet` format, making the data easier to load and analyze in [![Power BI][PowerBI-shield]][PowerBI-url]. The dataset includes PM10, PM2.5, temperature, and humidity values.
+This project combines a script written in [![Python][Python-shield]][Python-url] with a Power BI dashboard to explore local air quality data pulled from 2025. The script takes raw `.txt` files containing measurements and converts them into `.parquet` format, making the data easier to load and analyze in [![Power BI][PowerBI-shield]][PowerBI-url]. The dataset includes PM10, PM2.5, temperature, and humidity values.
 
 The project has two main parts:
 
 * a Python component that prepares and restructures the raw data, and
 * a Power BI dashboard that visualizes trends and patterns over time.
 
-It is built as a portfolio project to demonstrate practical work with real environmental data, from basic data transformation to interactive reporting. The original data source is listed in the <a href="#acknowledgments">Acknowledgments</a> section.
+It is built as a portfolio project to demonstrate practical work with real environmental data, from basic data transformation to interactive reporting. The original data source, along with the one currently used, are both listed in the <a href="#acknowledgments">Acknowledgments</a> section.
+
+### How did I choose the topic?
+
+* I wanted the topic to be local, in the city where I am currently studying.
+* I wanted to work with real, flawed data rather than algorithmically generated datasets that I could create on my own or get from Kaggle.
+
+### How did I search for data?
+
+* At first, I tried OpenAQ, but I ran into several issues:
+  * limited API call rates;
+  * too much missing or corrupted data;
+  * a limited number of nodes.
+* I ended up using airdata.ro and settled only on 2025 data, because the 2024 data from certain nodes had approximately one third of the information missing.
+* Compared with OpenAQ, airdata.ro had several advantages:
+  * more consistent data;
+  * a higher number of nodes;
+  * clear details about the methodology and technologies used.
+* The main disadvantages of airdata.ro were:
+  * limited data about pollutants;
+  * lack of an API.
+
+### How did I choose the node locations?
+
+* There should not be two locations in the same area or neighborhood.
+* Locations should not be on private property.
+* Locations should not be in surrounding localities, such as Ghiroda, Chișoda, Giroc, or Dumbrăvița.
+
+#### Zone division
+
+**Ultracentral**
+
+* 33-P-ta Sf Gheorghe
+
+**Central**
+
+* 07-St. Gh. Lazar
+* 09-Pasajul Jiul
+* 11-Bd. Vasile Parvan
+* 04-Bd. Take Ionescu
+* 12-St. Divizia 9 Cavalerie
+
+**Suburbs**
+
+* 114-Calea Buziasului_AEM
+* 02-Bd. L. Rebreanu
+* 120-Dorobantilor
+* 152-C.Aradului/G.T.Popa
+* 116-Str. Closca
 
 ___
 
@@ -95,7 +143,8 @@ ___
 
 * [Best README Template](https://github.com/othneildrew/Best-README-Template)
 * [Choose an Open Source License](https://choosealicense.com)
-* [Airdata](https://airdata.ro/map) - this is the source of the data used in this project
+* [Airdata](https://airdata.ro/map) - this is the currently used data source of this project
+* [OpenAQ](https://openaq.org/) - this is the originally used data source of this project
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
