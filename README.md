@@ -104,8 +104,9 @@ ___
 ## To-Do
 - Expand to dataset to multiple years/locations for more conclusive results
 - Rewrite the script to:
-  - omit temperature and humidity values;
   - include more data nodes.
+- Expand the report and include data regarding humidity and temperatures.
+- On the "Legend" page, detail about the risks of prolonged exposure to polluted air.
 - Add overview/dashboard on first page.
 - Create a mobile-friendly report format.
 
