@@ -1,9 +1,9 @@
-<h3 align="center">Local Air Quality Dashboard</h3>
+<h3 align="center">Local Air Quality Report</h3>
 
 ___
 
   <p align="center">
-    A Python data filtering script and Power BI dashboard that help analyze and visualize recent local air quality and weather humidity trends.
+    A Python data filtering script and Power BI report that help analyze and visualize recent local air quality trends.
   </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -28,7 +28,7 @@ This project combines a script written in [![Python][Python-shield]][Python-url]
 The project has two main parts:
 
 * a Python component that prepares and restructures the raw data, and
-* a Power BI dashboard that visualizes trends and patterns over time.
+* a Power BI report that visualizes trends and patterns over time.
 
 It is built as a portfolio project to demonstrate practical work with real environmental data, from basic data transformation to interactive reporting. The original data source, along with the one currently used, are both listed in the <a href="#acknowledgments">Acknowledgments</a> section.
 
@@ -58,7 +58,7 @@ It is built as a portfolio project to demonstrate practical work with real envir
 * Locations should not be on private property.
 * Locations should not be in surrounding localities, such as Ghiroda, Chișoda, Giroc, or Dumbrăvița.
 
-#### Zone division
+### Zone division
 
 **Ultracentral**
 
@@ -82,17 +82,7 @@ It is built as a portfolio project to demonstrate practical work with real envir
 
 ### How complete is the selected data?
 
-After converting the raw data to Parquet format, I checked it missing values.
-
-Across the 11 selected Parquet files, the dataset contains:
-
-* 96,349 timestamped records;
-* 385,396 expected sensor measurements;
-* 14,213 missing sensor measurements;
-* an overall missing data rate of 3.69% at measurement-level;
-* 6,609 records with at least one missing sensor measurement, representing 6.86% missing data rate at row-level.;
-
-The missing values are not evenly distributed across the measured attributes:
+After converting the raw data to Parquet format, I checked it missing values. They are not evenly distributed across the measured attributes:
 
 | Attribute | Missing values | Missing percentage |
 |---|---:|---:|
@@ -118,8 +108,8 @@ ___
 
 ### Done
 
-~~- Finished the report in desktop format. ~~
-~~- Included a PDF version for easier access and visualization. ~~
+- ~~Finished the report in desktop format~~
+- ~~Included a PDF version for easier access and visualization.~~
 
 ___
 
