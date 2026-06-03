@@ -11,7 +11,7 @@ ___
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#Demo">Demo</a></li>
+    <li><a href="#to-do">To-Do</a></li>
     <li><a href="#requirements">Requirements</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#license">License</a></li>
@@ -107,21 +107,28 @@ The full data integrity report is available here: [DATA_INTEGRITY.md](DATA_INTEG
 
 ___
 
-<!-- DEMO EXAMPLES -->
-## Demo
+<!-- TO-DO -->
+## To-Do
+- Expand to dataset to multiple years/locations for more conclusive results
+- Rewrite the script to:
+  - omit temperature and humidity values;
+  - include more data nodes.
+- Add overview/dashboard on first page.
+- Create a mobile-friendly report format.
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Done
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+~~- Finished the report in desktop format. ~~
+~~- Included a PDF version for easier access and visualization. ~~
 
 ___
 
 <!-- REQUIREMENTS -->
 ## Requirements
 
-Python version: 3.6 (to run the data cleaning script)
-
-Power BI (to visualize the dashboard)
+- Python 3.6 (to run the data cleaning script)
+- Power BI (to visualize the dashboard)
+- Any PDF viewer (to open the PDF version of the report)
 
 ___
 

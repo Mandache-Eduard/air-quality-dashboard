@@ -1,0 +1,129 @@
+﻿{
+  "name": "Timisoara Air Quality Dashboard",
+  "background": "#101014",
+  "foreground": "#FBFAF5",
+  "tableAccent": "#3D6AD2",
+  "textClasses": {
+    "callout": {
+      "fontFace": "Montserrat",
+      "fontSize": 40,
+      "color": "#FBFAF5"
+    },
+    "title": {
+      "fontFace": "Montserrat",
+      "fontSize": 13,
+      "color": "#FBFAF5"
+    },
+    "header": {
+      "fontFace": "Montserrat",
+      "fontSize": 12,
+      "color": "#FBFAF5"
+    },
+    "label": {
+      "fontFace": "Montserrat",
+      "fontSize": 10,
+      "color": "#FBFAF5"
+    }
+  },
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#101014"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#101014"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "*": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#1B1A1D"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "title": [
+          {
+            "fontFamily": "Montserrat",
+            "fontSize": 13,
+            "fontColor": {
+              "solid": {
+                "color": "#FBFAF5"
+              }
+            }
+          }
+        ],
+        "legend": [
+          {
+            "fontFamily": "Montserrat",
+            "labelColor": {
+              "solid": {
+                "color": "#FBFAF5"
+              }
+            }
+          }
+        ],
+        "categoryAxis": [
+          {
+            "fontFamily": "Montserrat",
+            "labelColor": {
+              "solid": {
+                "color": "#FBFAF5"
+              }
+            },
+            "titleColor": {
+              "solid": {
+                "color": "#FBFAF5"
+              }
+            },
+            "gridlineColor": {
+              "solid": {
+                "color": "#2A2930"
+              }
+            }
+          }
+        ],
+        "valueAxis": [
+          {
+            "fontFamily": "Montserrat",
+            "labelColor": {
+              "solid": {
+                "color": "#FBFAF5"
+              }
+            },
+            "titleColor": {
+              "solid": {
+                "color": "#FBFAF5"
+              }
+            },
+            "gridlineColor": {
+              "solid": {
+                "color": "#2A2930"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
