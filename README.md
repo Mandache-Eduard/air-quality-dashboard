@@ -16,7 +16,7 @@ ___
     <li><a href="#installation">Installation</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#acknowledgments--sources">Acknowledgments & Sources</a></li>
   </ol>
 </details>
 
@@ -59,6 +59,9 @@ It is built as a portfolio project to demonstrate practical work with real envir
 * Locations should not be in surrounding localities, such as Ghiroda, Chișoda, Giroc, or Dumbrăvița.
 
 ### Zone division
+<p align="center">
+  <img src="Pages/Dashboard_Page_02.jpg" alt="Dashboard page showing the zone division used in the analysis" width="100%">
+</p>
 
 **Ultracentral**
 
@@ -161,12 +164,17 @@ Project Link: [https://github.com/Mandache-Eduard/flac-authenticator](https://gi
 ___
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Acknowledgments & Sources
 
 * [Best README Template](https://github.com/othneildrew/Best-README-Template)
 * [Choose an Open Source License](https://choosealicense.com)
 * [Airdata](https://airdata.ro/map) - this is the currently used data source of this project
 * [OpenAQ](https://openaq.org/) - this is the originally used data source of this project
+* [Atmospheric boundary layer height and particulate matter relationship](https://aaqr.org/articles/aaqr-21-10-oa-0294)
+* [Global hourly PM2.5 concentration patterns](https://pubs.acs.org/doi/10.1021/acs.estlett.8b00573)
+* [Temperature inversion and trapped pollution](https://www.eea.europa.eu/en/analysis/maps-and-charts/temperature-inversion-traps-pollution-at)
+* [Weekly patterns in particulate matter concentrations](https://www.sciencedirect.com/science/article/abs/pii/S1352231011005851)
+* [Saharan dust transport over Romania, March 2025](https://www.meteoromania.ro/wp-content/uploads/comunicate/Comunicat_praf_saharian_09_martie_2025.pdf)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
